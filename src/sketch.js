@@ -1,4 +1,5 @@
-export default function sketch (p) {
+// @flow
+export default function sketch(p) {
   let rotation = 0;
 
   p.setup = function () {
@@ -6,7 +7,7 @@ export default function sketch (p) {
   };
 
   p.myCustomRedrawAccordingToNewPropsHandler = function (props) {
-    if (props.rotation){
+    if (props.rotation) {
       rotation = props.rotation * Math.PI / 180;
     }
   };
@@ -20,4 +21,4 @@ export default function sketch (p) {
     p.box(100);
     p.pop();
   };
-};
+}
