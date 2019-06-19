@@ -5,10 +5,10 @@ import sketch from './sketch';
 import './App.css';
 
 function App() {
-  var synth = new Tone.Synth().toMaster()
+  const synth = new Tone.Synth().toMaster();
 
-  //pass in an array of events
-  var part = new Tone.Part(function(time, event){
+  // pass in an array of events
+  const part = new Tone.Part(function(time, event){
 	  //the events will be given to the callback with the time they occur
 	  synth.triggerAttackRelease(event.note, event.dur, time)
   }, [{ time : 0, note : 'C4', dur : '4n'},
