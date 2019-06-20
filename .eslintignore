@@ -1,1 +1,2 @@
-app/assets/javascripts/cable.js
+src/serviceWorker.js
+src/sketch.js
