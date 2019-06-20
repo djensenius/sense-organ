@@ -1,5 +1,6 @@
 // @flow
-export default function sketch(p) {
+
+export default function sketch(p: any) {
   let rotation = 0;
 
   p.setup = function () {

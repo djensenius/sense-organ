@@ -5,8 +5,6 @@
 .*/dist/*
 .*/webpack.config.js
 .*/node_modules/@mapbox/jsonlint-lines-primitives/test/*
-.*/src/serviceWorker.js
-.*/src/sketch.js
 
 [include]
 
